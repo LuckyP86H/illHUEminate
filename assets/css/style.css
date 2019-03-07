@@ -1,12 +1,240 @@
-/* illHUEminate Project 1 */
+/* css for the carousel images ------------------------------------------------------------------------------*/
+.dnSlide-main {
+  position: relative;
+  visibility: hidden;
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  width: 800px;
+  height: 234px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.dnSlide-main.done {
+  visibility: visible;
+}
+
+.dnSlide-main.dn-response {
+  width: 100%;
+}
+
+.dnSlide-main.dn-response .dnSlide-list {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  padding-left: 0px;
+}
+
+.dnSlide-main a,
+.dnSlide-main img {
+  display: block;
+  border: 0px;
+}
+
+.dnSlide-main .dnSlide-list {
+  width: 800px;
+  height: 234px;
+  list-style: none;
+}
+
+.dnSlide-main .dnSlide-btn {
+  color: black;
+  height: 234px;
+  width: 100px;
+  opacity: 0.5;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transition: opacity 0.3s;
+  z-index: 10;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.dnSlide-main .dnSlide-btn:hover {
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.dnSlide-main.dnSlide-hide {
+  display: none;
+}
+
+.dnSlide-main .dnSlide-item {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.dnSlide-main .dnSlide-left-btn {
+  background-image: url("../images/left.png");
+  left: 0;
+}
+
+.dnSlide-main .dnSlide-right-btn {
+  background-image: url("../images/right.png");
+  right: 0;
+  left: auto;
+}
+
+@media \0screen\,
+screen\9 {
+  .dnSlide-main {
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+
+  .dnSlide-main .dnSlide-right-btn {
+    background-image: url("../images/right.png");
+  }
+
+  .dnSlide-main .dnSlide-left-btn {
+    background-image: url("../images/left.png");
+  }
+}
+
+/* css for the glow up button---------------------------------------------------------------------------------------------- */
+#Btn {
+  position: relative;
+  transform: translate (-50%, -50%);
+  width: 500px;
+  height: 90px;
+  text-align: center;
+  line-height: 60px;
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-sizing: border-box;
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, lightgreen, #03a9f4);
+  background-size: 400%;
+  border-radius: 30px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
+    sans-serif;
+  padding: 1%;
+
+  /* text-decoration: none; */
+}
+
+#Btn:hover {
+  animation: animate 8s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0%;
+  }
+
+  100% {
+    background-position: 400%;
+  }
+}
+
+#Btn:before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  border-radius: 40px;
+  opacity: 0;
+  transition: 0.5%;
+  filter: blur(20px);
+}
+
+#Btn:hover:before {
+  filter: blur(20px);
+  opacity: 1;
+  animation: animate 8s linear infinite;
+}
+
+/* end of button css */
+
+.container {
+  text-align: center;
+}
+
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+footer,
+.push {
+  padding-top: 15px;
+  height: 50px;
+  margin-bottom: -50px;
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  color: gray;
+  /* height: 30px; */
+  margin-top: -40px;
+}
+
+p {
+  font-size: 10px;
+
+}
+
+.form-rounded {
+  border-radius: 1rem;
+}
+
+.form-rounded:after {
+  border-radius: 1rem;
+}
+
+img {
+  height: 130px;
+}
+
+.jumbotron {
+  background-size: 100% 100%;
+  background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+
+}
+
+#background {
+  background-size: 100% 100%;
+  margin: 0 0 0 auto;
+  background-color: rgb(0, 0, 0);
+}
+
+.card {
+  background-color: rgb(0, 0, 0);
+
+}
 
 .rainbow {
-    background: red;
-    background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet);
-    background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
-    background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
-    background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 12em;
-    }
+  background: red;
+  background: -webkit-linear-gradient(left, orange, yellow, green, cyan, blue, violet);
+  background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+  background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+  background: linear-gradient(to right, orange, yellow, green, cyan, blue, violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Oswald', sans-serif;
+  font-size: 4em;
+  font-weight: lighter;
+}
+
+.custom-file {
+  width: 40%;
+}

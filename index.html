@@ -1,30 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Color Tag API test</title>
-    <link rel="reset" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
-    </head>
+    <meta charset="utf-8">
+    <title>IllHUEminate</title>
+    <!-- link to bootstrap -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+
+</head>
+
 <body>
-<div class="rainbow">illHUEminate</div>
+    <div id="background">
 
+        <!-- IllHUEminate header-->
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">
+                    <div class="rainbow">illHUEminate</div>
+                </h1>
+                <p class="lead"></p>
+            </div>
+        </div>
 
-        <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                  <span class="input-group-text" id="inputGroup-sizing-default">Insert URL of photo you wish to pallet</span>
+        <!-- div for the picture carrosal -->
+        <div class="container">
+            <div class='dnSlide-main' id="imgPreview">
+                <img src="assets/images/photo1.jpeg" width="100%">
+                <img src="assets/images/photo2.jpeg" width="100%">
+                <img src="assets/images/photo3.jpeg" width="100%">
+                <img src="assets/images/photo4.jpeg" width="100%">
+                <img src="assets/images/photo5.jpeg" width="100%">
+                <img src="assets/images/photo6.jpeg" width="100%">
+                <img src="assets/images/photo7.jpeg" width="100%">
+                <img src="assets/images/photo8.jpeg" width="100%">
+                <img src="assets/images/photo9.jpeg" width="100%">
+
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!-- div for file browse form -->
+        <div class="container">
+            <div class="custom-file">
+                <form method="POST" action="" enctype="multipart/form-data">
+                    <input type="file" class="custom-file-input" id="customFile" id="imgUpload">
+                    <label class="custom-file-label form-rounded" for="customFile">Choose file</label>
+                </form>
+
+            </div>
+        </div>
+        <br>
+
+        <!-- div for submission button -->
+        <div class="container">
+            <!-- <button type="button" class="btn btn-primary btn-lg">Large button</button> -->
+            <a id="Btn" href="#" style="text-decoration:none">Upload Photo for Swatches</a>
+
+        </div>
+        <br>
+
+        <!-- div for where the swatches will be dumped -->
+        <div class="container">
+            <div class="card">
+                <div class="card-body" id="palletBtn">
+
                 </div>
-                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-              </div>
-              <button type="button" class="btn btn-dark">Submit Image URL</button>
-    <script>
-    var authKey = "cb6afeeb6dmsh9c7e6f573a03d9ap154a87jsn46607dc97d4f";
-    var imageColorSearch = "http://apicloud-colortag.p.mashape.com/tag-url.json" + authKey;
-    
-    
-    </script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-   </body>
+            </div>
+        </div>
+        <br><br><br>
+        <!-- footer -->
+        <!-- sticky footer -->
+        <div class="push"></div>
+        <footer>
+            <p> © Copyright March 2019: Phuoc Phan, Sarah Sakhi, Paul Xu and Holland Gronau</p>
+        </footer>
+
+    </div>
+
+    <!-- link to jquery -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Link to Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+    <!-- link to javascript for image carousel -->
+    <script type="text/javascript" src="assets/javascript/slideScript.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/dnSlide.js"></script>
+    <script src="assets/js/expandJS.js"></script>
+    <script src="assets/js/carousel.js"></script>
+
+
+</body>
+
 </html>
