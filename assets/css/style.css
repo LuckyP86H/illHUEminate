@@ -99,7 +99,7 @@ screen\9 {
 }
 
 /* css for the glow up button---------------------------------------------------------------------------------------------- */
-#Btn {
+#submit {
   position: relative;
   transform: translate (-50%, -50%);
   width: 500px;
@@ -117,14 +117,12 @@ screen\9 {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
     sans-serif;
   padding: 1%;
-
   /* text-decoration: none; */
 }
 
-#Btn:hover {
+#submit:hover {
   animation: animate 8s linear infinite;
 }
-
 @keyframes animate {
   0% {
     background-position: 0%;
@@ -135,7 +133,7 @@ screen\9 {
   }
 }
 
-#Btn:before {
+#submit:before {
   content: '';
   position: absolute;
   top: -5px;
@@ -151,7 +149,7 @@ screen\9 {
   filter: blur(20px);
 }
 
-#Btn:hover:before {
+#submit:hover:before {
   filter: blur(20px);
   opacity: 1;
   animation: animate 8s linear infinite;
@@ -162,7 +160,6 @@ screen\9 {
 .container {
   text-align: center;
 }
-
 
 html,
 body {
