@@ -46,3 +46,7 @@ $('#submit').on('click', function () {
     console.log(inputURL);
     getCloudApi(inputURL);
 })
+
+$(document).on('click',"#palletBtn", function () {
+    console.log($(this).attr("data-color"))
+})
