@@ -1,4 +1,49 @@
-/* css for the carousel images ------------------------------------------------------------------------------*/
+/* illHUEminate Stylesheet*/
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+img {
+  height: 150px;
+}
+
+.jumbotron  {
+  line-height: 1;
+  color: inherit;
+  background-color: black;
+  padding-bottom: 0px;
+  padding-top: 0px;
+
+}
+
+.rainbow {
+  background: red;
+  background: -webkit-linear-gradient(left, red, orange, yellow, green, cyan, blue, violet);
+  background: -o-linear-gradient(right, red, orange, yellow, green, cyan, blue, violet);
+  background: -moz-linear-gradient(right, red, orange, yellow, green, cyan, blue, violet);
+  background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Oswald', sans-serif;
+  font-size: 3em;
+  font-weight: lighter;
+}
+
+.rainbow:hover {
+  -webkit-text-fill-color: white;
+}
+
+.about {
+  color: inherit;
+  color: white;
+  font-size: 18px; 
+  font-family: 'Oswald', sans-serif;
+  padding: 1em;
+}
+
 .dnSlide-main {
   position: relative;
   visibility: hidden;
@@ -82,23 +127,60 @@
   left: auto;
 }
 
-@media \0screen\,
-screen\9 {
-  .dnSlide-main {
-    margin-top: 35px;
-    margin-bottom: 35px;
-  }
-
-  .dnSlide-main .dnSlide-right-btn {
-    background-image: url("../images/right.png");
-  }
-
-  .dnSlide-main .dnSlide-left-btn {
-    background-image: url("../images/left.png");
-  }
+.container {
+  text-align: center;
 }
 
-/* css for the glow up button---------------------------------------------------------------------------------------------- */
+.rainbow2 {
+  width: 100%;
+  background: red;
+  background: linear-gradient(to right,red, orange, yellow, green, blue, violet, red, orange, yellow, green, cyan, blue, violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2em;
+  font-weight: lighter;
+  padding: 1em;
+}
+
+.rainbow2:hover {
+  -webkit-text-fill-color: white;
+}
+
+.form-rounded {
+  border-radius: 1rem;
+}
+
+.form-rounded:after {
+  border-radius: 1rem;
+}
+
+.card {
+  width: 200px;
+  height: 150px;
+  font-size: 1em;
+  margin: 2.3em;
+}
+
+.card-title {
+  padding-top: 2em;
+}
+
+ .footer {
+  line-height: 1;
+  color: inherit;
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.8em;
+  color: white;
+  padding-bottom: 2em;
+}
+
+#background {
+  background-size: 100% 100%;
+  margin: 0 0 0 auto;
+  background-color: rgb(0, 0, 0);
+}
+
 #submit {
   position: relative;
   transform: translate (-50%, -50%);
@@ -108,16 +190,13 @@ screen\9 {
   line-height: 60px;
   color: white;
   font-size: 18px;
-  text-transform: uppercase;
   text-decoration: none;
   box-sizing: border-box;
-  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, lightgreen, #03a9f4);
+  background: linear-gradient(90deg, violet, red,orange, yellow, green, blue, cyan, violet);
   background-size: 400%;
   border-radius: 30px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
-    sans-serif;
+  font-family: 'Oswald', sans-serif;
   padding: 1%;
-  /* text-decoration: none; */
 }
 
 #submit:hover {
@@ -127,7 +206,6 @@ screen\9 {
   0% {
     background-position: 0%;
   }
-
   100% {
     background-position: 400%;
   }
@@ -141,7 +219,7 @@ screen\9 {
   right: -5px;
   bottom: -5px;
   z-index: -1;
-  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background: linear-gradient(90deg, violet, red,orange, yellow, green, blue, cyan, violet);
   background-size: 400%;
   border-radius: 40px;
   opacity: 0;
@@ -155,83 +233,85 @@ screen\9 {
   animation: animate 8s linear infinite;
 }
 
-/* end of button css */
-
-.container {
-  text-align: center;
-}
-
-html,
-body {
+#palletOut {
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
   height: 100%;
-  margin: 0;
 }
 
-footer,
-.push {
-  padding-top: 15px;
-  height: 50px;
-  margin-bottom: -50px;
-  background-color: black;
-  width: 100%;
-  text-align: center;
-  position: relative;
-  left: 0;
-  bottom: 0;
-  color: gray;
-  /* height: 30px; */
-  margin-top: -40px;
+/*Media Queries*/
+@media only screen and (max-width:519px) {
+  .rainbow {
+    font-size: 1em;
+  }
+  .about {
+    font-size: 10px;
+  }
+  .rainbow2 {
+    font-size: 1em;
+  }
+  .footer {
+    font-size: 0.4em;
+  }
 }
 
-p {
-  font-size: 10px;
-
+@media only screen and (max-width:411px) {
+  .rainbow {
+    font-size: 1em;
+  }
+  .about {
+    font-size: 10px;
+  }
+  .rainbow2 {
+    font-size: 1em;
+  }
+  .footer {
+    font-size: 0.4em;
+  }
 }
 
-.form-rounded {
-  border-radius: 1rem;
+@media only screen and (max-width:375px) {
+  .rainbow {
+    font-size: 1em;
+  }
+  .about {
+    font-size: 10px;
+  }
+  .rainbow2 {
+    font-size: 1em
+  }
+  .footer {
+    font-size: 0.4em;
+  }
 }
 
-.form-rounded:after {
-  border-radius: 1rem;
+@media only screen and (max-width:360px) {
+  .rainbow {
+    font-size: 1em;
+  }
+  .about {
+    font-size: 10px;
+  }
+  .rainbow2 {
+    font-size: 1em;
+  }
+  .footer {
+    font-size: 0.4em;
+  }
 }
 
-img {
-  height: 130px;
-}
+@media \0screen\,screen\9 {
+  .dnSlide-main {
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
 
-.jumbotron {
-  background-size: 100% 100%;
-  background-image: url("../images/background.png");
-  background-repeat: no-repeat;
+  .dnSlide-main .dnSlide-right-btn {
+    background-image: url("../images/right.png");
+  }
 
-}
-
-#background {
-  background-size: 100% 100%;
-  margin: 0 0 0 auto;
-  background-color: rgb(0, 0, 0);
-}
-
-.card {
-  background-color: rgb(0, 0, 0);
-
-}
-
-.rainbow {
-  background: red;
-  background: -webkit-linear-gradient(left, orange, yellow, green, cyan, blue, violet);
-  background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
-  background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
-  background: linear-gradient(to right, orange, yellow, green, cyan, blue, violet);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: 'Oswald', sans-serif;
-  font-size: 4em;
-  font-weight: lighter;
-}
-
-.custom-file {
-  width: 40%;
+  .dnSlide-main .dnSlide-left-btn {
+    background-image: url("../images/left.png");
+  }
 }
