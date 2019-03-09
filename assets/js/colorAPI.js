@@ -1,4 +1,5 @@
 function getCloudApi(inputURL) {
+    $("#palletOut").empty();
     var authKey = "cb6afeeb6dmsh9c7e6f573a03d9ap154a87jsn46607dc97d4f";
     var pallette = 'palette=w3c'
     var sort = 'sort=relevance'
@@ -50,3 +51,12 @@ $('#submit').on('click', function () {
 $(document).on('click',"#palletBtn", function () {
     console.log($(this).attr("data-color"))
 })
+
+$(document).on('click',"img", function () {
+    console.log($(this).attr("src"))
+
+    inputURL = $(this).attr("src")
+    getCloudApi(inputURL);
+
+})
+

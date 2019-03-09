@@ -10,6 +10,11 @@ img {
   height: 150px;
 }
 
+img:hover{ 
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
 .jumbotron  {
   line-height: 1;
   color: inherit;
