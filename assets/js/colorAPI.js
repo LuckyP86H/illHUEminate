@@ -48,9 +48,9 @@ $('#submit').on('click', function () {
     getCloudApi(inputURL);
 })
 
-$(document).on('click',"#palletBtn", function () {
-    console.log($(this).attr("data-color"))
-})
+//$(document).on('click',"#palletBtn", function () {
+ //   console.log($(this).attr("data-color"))
+//})
 
 $(document).on('click',"img", function () {
     console.log($(this).attr("src"))
