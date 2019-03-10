@@ -4,7 +4,11 @@
 
 *illHUEminate API*: Proudly presented by **Phuoc Phan, Sarah Sakhi, Paul Xu and Holland Gronau**
 
+<<<<<<< HEAD
     Last update date: Mar 10th, 2019
+=======
+    Last update date: Mar 9th, 2019
+>>>>>>> 56a540ed815d0c3a5da96e8a6dc0d8caa7223f2b
 
                                              
 ### Objective: create a website application that works with two API’s, uses AJAX, has a repeating element with persistent data storage.
