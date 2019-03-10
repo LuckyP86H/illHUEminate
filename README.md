@@ -1,13 +1,15 @@
 # Capstone illHUEminate:
 
-*real API repo*
+----------
 
-    Last update date: Mar 5th, 2018
+*illHUEminate API*: Proudly presented by **Phuoc Phan, Sarah Sakhi, Paul Xu and Holland Gronau**
+
+    Last update date: Mar 10th, 2019
 
                                              
 ### Objective: create a website application that works with two API’s, uses AJAX, has a repeating element with persistent data storage.
 
-
+**[Click Here to Watch the Demo](https://www.youtube.com/watch?v=LlBv3kgY2jA&feature=youtu.be)**
 
 ### 1. Philips Hue API information:
 
@@ -43,5 +45,7 @@
 
 - In closing, we plan to combine these two API’s to make nice ease of use of the application and an enjoyable experience for anyone who owns a Philips Hue bulb. Sometimes seeing an image we like doesn’t make it easy for us to truly identify the color and this is a great way to easily and accurately adjust your smart lights into a custom pallet. Having a range of hue lighting really makes a difference in the atmosphere and helps the user be immersed in their environment.
 
+### 5. Followed-up:
 
-        Copyright March 2019: Phuoc Phan, Sarah Sakhi, Paul Xu and Holland Gronau
+
+    Copyright March 2019: Phuoc Phan, Sarah Sakhi, Paul Xu and Holland Gronau
