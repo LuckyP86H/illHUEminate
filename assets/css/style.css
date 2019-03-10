@@ -56,6 +56,9 @@ img:hover{
 .rainbow2 {
   width: 100%;
   background: red;
+  background: -webkit-linear-gradient(to right,red, orange, yellow, green, blue, violet, red, orange, yellow, green, cyan, blue, violet);
+  background: -o-linear-gradient(to right,red, orange, yellow, green, blue, violet, red, orange, yellow, green, cyan, blue, violet);
+  background: -moz-linear-gradient(to right,red, orange, yellow, green, blue, violet, red, orange, yellow, green, cyan, blue, violet);
   background: linear-gradient(to right,red, orange, yellow, green, blue, violet, red, orange, yellow, green, cyan, blue, violet);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -163,6 +166,21 @@ img:hover{
 }
 
 /*Media Queries*/
+@media only screen and (max-width:768px) {
+  .rainbow {
+    font-size: 1em;
+  }
+  .about {
+    font-size: 10px;
+  }
+  .rainbow2 {
+    font-size: 1em;
+  }
+  .footer {
+    font-size: 0.4em;
+  }
+}
+
 @media only screen and (max-width:519px) {
   .rainbow {
     font-size: 1em;
