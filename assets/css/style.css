@@ -49,6 +49,14 @@ img:hover{
   padding: 1em;
 }
 
+input:valid {
+  border: 2px solid white;
+}
+
+input:invalid {
+  border: 3px solid lightcoral;
+}
+
 .container {
   text-align: center;
 }
