@@ -124,6 +124,7 @@ input:invalid {
   opacity: 1;
   transition: opacity 0.3s;
   -webkit-appearance: none;
+  margin: 2em;
 }
 
 #submit {
