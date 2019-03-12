@@ -55,6 +55,9 @@
         </div>
            <input type="url" placeholder="http://anyexamplephoto.jpg" pattern="https?:\/\/.*\.(jpg|jpeg|png|gif)" class="form-control" aria-label="Sizing example input" id="userInput" aria-describedby="inputGroup-sizing-default">
         </div>
+        <div class="container">
+            <input type="range" min="1" max="254" value="127" step="10" onchange="sliderChange(this.value)" id="slider" />
+        </div>
             <a id="submit" href="#">Submit image URL for custom pallet</a>
     </div>
 

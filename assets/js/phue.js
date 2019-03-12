@@ -2,16 +2,26 @@ $(document).ready(function () {
 
 });
 
-function philipHue(x, y) {
+let val = "";
+
+function sliderChange(val) {
+	var val = parseInt(val);
+	console.log(val);
+	philipHue(philiphueXY.x, philiphueXY.y, val);
+
+}
+
+
+function philipHue(x, y, val) {
 	// var light = prompt('pick a color');
-	var queryURL = 'http://192.168.0.102/api/NVUZYyoeuq2dibqjW4bHs0NtqTx3mAYvXaaHKZzC/lights/2/state';
+	var queryURL = 'http://192.168.0.100/api/NVUZYyoeuq2dibqjW4bHs0NtqTx3mAYvXaaHKZzC/lights/2/state';
 	$.ajax({
 		url: queryURL,
 		method: 'PUT',
 		data: JSON.stringify({
 			on: true,
 			sat: 254,
-			bri: 254,
+			bri: val,
 			xy: [x, y],
 			colormode: 'xy'
 		})
@@ -20,7 +30,6 @@ function philipHue(x, y) {
 		$('#light').text(JSON.stringify(response));
 	});
 };
-
 // conversion from hex to rgb ============================================================================================================
 
 var r, g, b;
