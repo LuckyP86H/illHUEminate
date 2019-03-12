@@ -25,12 +25,11 @@ $(document).ready(function () {
                     src: links.link,
                     "width": "100%"
                 })).owlCarousel('update').trigger('refresh.owl.carousel');
-                //$owl.trigger('refresh.owl.carousel');
         });
 
     }());
 
-    
+
 });
 
 function addLinks(linkAddress) {

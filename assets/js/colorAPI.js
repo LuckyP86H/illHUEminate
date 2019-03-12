@@ -60,8 +60,7 @@ $('#submit').on('click', function () {
     console.log(inputURL);
     //Add link to firebase
     addLinks(inputURL);
-    
-    //getCloudApi(inputURL);
+    getCloudApi(inputURL);
 });
 
 $(document).on('click', "img", function () {
