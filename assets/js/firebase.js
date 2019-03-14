@@ -1,10 +1,7 @@
 var config = {
-    apiKey: "AIzaSyBX34Xwuv_WM_p6rUh1kDNyATOwszQby_0",
-    authDomain: "illhueminate-535f5.firebaseapp.com",
-    databaseURL: "https://illhueminate-535f5.firebaseio.com",
-    projectId: "illhueminate-535f5",
-    storageBucket: "illhueminate-535f5.appspot.com",
-    messagingSenderId: "807556930112"
+    apiKey: "YOUR API KEY",
+    authDomain: "YOUR AUTHORIZED DOMAIN",
+    databaseURL: "YOUR URL DATABASE"
 };
 
 

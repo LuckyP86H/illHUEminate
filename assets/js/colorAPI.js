@@ -3,11 +3,11 @@ var philiphueXY;
 function getCloudApi(inputURL) {
     $("#palletOut").empty();
 
-    var authKey = "cb6afeeb6dmsh9c7e6f573a03d9ap154a87jsn46607dc97d4f";
-    var pallette = 'palette=w3c';
+    var authKey = "INSERT YOUR AUTHORIZED KEY HERE";
+    var pallette = 'SOME PALLETTE';
     var sort = 'sort=relevance';
     var url = "url=" + inputURL;
-    var imageUrl = `https://apicloud-colortag.p.rapidapi.com/tag-url.json?${pallette}&${sort}&${url}`;
+    var imageUrl = 'INSERT YOUR CLOUD IMAGE API HERE';
     var header = {
         "X-RapidAPI-Key": authKey
     };

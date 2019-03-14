@@ -4,22 +4,24 @@
 
 *illHUEminate API*: Proudly presented by **Phuoc Phan, Sarah Sakhi, Paul Xu and Holland Gronau**
         
-    Last update date: Mar 10th, 2019
+    Last update date: Mar 14th, 2019
                                              
-### Objective: create a website application that works with two API’s, uses AJAX, has a repeating element with persistent data storage.
+###### Objective: create a website application that works with two API’s, uses AJAX, has a repeating element with persistent data storage.
 
-**[Click Here to Watch the Demo](https://www.youtube.com/watch?v=LlBv3kgY2jA&feature=youtu.be)**
+[![Click Here to Watch the Demo](assets/images/Demo.png)](https://www.youtube.com/watch?v=LlBv3kgY2jA&feature=youtu.be)
+
 
 ### 1. Philips Hue API information:
 
 - Hue by Philips is a wireless LED lighting system which uses bulbs that allow the user to control their lights from the web. These smart bulbs produce a range of colors and intensities. They are connected to the bridge, which is a device used to communicate with the bulbs via the internet.
-
+  
 
 - By using Philips Hue API we are able to combine it with other applications. The bridge and the application must be on the same local network in order to communicate with the bulbs. The bridge connects with the bulbs via an open standards protocol called ZigBee light link.
 
 
 - Philips Hue uses an interface called ‘API debug tool’ which takes the IP address of the bridge and returns any data related to the bulb in JSON format using the ‘GET’ method. To make changes to the bulb like turning on/off the bulb, brightness, hue, and saturation the ‘PUT’ and ‘POST’ method is used.
 
+![Clip API Debugger](assets/images/hue&#32;API&#32;screenshot.png)
 
 ### 2. About the Color Tag API:        
 
@@ -32,10 +34,14 @@
 
 - This data output in two options. The first is simple where it returns colors in an object in a string. It has limited color selections. The second is a pallet that is w3c compatible. It returns 1,500 possible color names and up to a max of 20 colors per image. Image types supported are JPEG, PNG, and GIF. With a max resolution of 8192 X 8192 and a max file size of 20 MBytes.
 
+Insert image of URL | Click Image on Page
+:---------:|:----------:
+![Insert img here](http://g.recordit.co/RvIwfkDW3s.gif) | ![Insert img here](http://g.recordit.co/S9DCwuZrVI.gif)
+
 
 ### 3. Trellos Agile Process
 
-[See more details for our porject breakdown](https://trello.com/b/k0AIxvue/api-project)
+[See more details for our porject breakdown!](https://trello.com/b/k0AIxvue/api-project)
 
 
 
@@ -46,5 +52,10 @@
 
 ### 5. Followed-up:
 
+- User login page
+- Music API Involved
+- Multi-hue Lighting Control
+- Philip Strip Lighting Control
 
-    Copyright March 2019: Phuoc Phan, Sarah Sakhi, Paul Xu and Holland Gronau
+----------------------
+$\copyright$ March 2019: Phuoc Phan, Sarah Sakhi, Paul Xu and Holland Gronau

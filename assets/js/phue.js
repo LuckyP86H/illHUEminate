@@ -14,7 +14,7 @@ function sliderChange(val) {
 
 function philipHue(x, y, val) {
 	// var light = prompt('pick a color');
-	var queryURL = 'http://192.168.0.100/api/NVUZYyoeuq2dibqjW4bHs0NtqTx3mAYvXaaHKZzC/lights/2/state';
+	var queryURL = 'http://192.168.0.100/api/"INSERT_YOUR_IP_ADDRESS_CODE_HERE"/lights/2/state';
 	$.ajax({
 		url: queryURL,
 		method: 'PUT',
