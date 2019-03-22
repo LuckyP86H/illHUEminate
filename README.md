@@ -57,5 +57,5 @@ Insert image of URL | Click Image on Page
 - Multi-hue Lighting Control
 - Philip Strip Lighting Control
 
-----------------------
-$\copyright$ March 2019: Phuoc Phan, Sarah Sakhi, Paul Xu and Holland Gronau
+______________________
+<sub> &copy; March 2019: Phuoc Phan, Sarah Sakhi, Paul Xu and Holland Gronau </sub>
